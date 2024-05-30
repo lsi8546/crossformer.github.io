@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cross-guided attention for multi-modal object detection</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+        displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
+        processEscapes: true, 
+        tags: 'all',
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script
+    type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Cross-guided attention for multi-modal object detection</h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Seungik Lee, Jaehyeong Park, Jinsun Park
+            </span>
+          </div>
+          
+
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Pusan National University, South Korea
+            </span>
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              
+              <span class="link-block">
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+              <!-- Video Link. -->
+              
+              <!-- Code Link. -->
+              
+              <!-- Dataset Link. -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="content">
+  <!-- Using HTML to center the abstract -->
+<div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+        <h2>Abstract</h2>
+        <div class="content has-text-justified">
+<!-- The "computable" numbers may be described briefly as the real
+numbers whose expressions as a decimal are calculable by finite means.
+Although the subject of this paper is ostensibly the computable numbers.
+it is almost equally easy to define and investigate computable functions
+of an integral variable or a real or computable variable, computable
+predicates, and so forth. The fundamental problems involved are,
+however, the same in each case, and I have chosen the computable numbers
+for explicit treatment as involving the least cumbrous technique. I hope
+shortly to give an account of the relations of the computable numbers,
+functions, and so forth to one another. This will include a development
+of the theory of functions of a real variable expressed in terms of computable
+numbers. According to my definition, a number is computable
+if its decimal can be written down by a machine... -->
+Object detection is one of the essential tasks in a variety of real-world applications such as autonomous driving and robotics. In a real-world scenario, unfortunately, there are numerous challenges such as illumination changes, adverse weather conditions, and geographical changes, to name a few. To tackle the problem, we propose a novel multi-modal object detection model that is built upon a hierarchical transformer and cross-guidance between different modalities. The proposed hierarchical transformer consists of domain-specific feature extraction networks where intermediate features are connected by the proposed Cross-Guided Attention Module (CGAM) to enrich their representational power. Specifically, in the CGAM, one domain is regarded as a guide and the other is assigned to a base. After that, the cross-modal attention from the guide to the base is applied to the base feature. The CGAM works bidirectionally in parallel by exchanging roles between modalities to refine multi-modal features simultaneously. Experimental results on FLIR-aligned, LLVIP, and KAIST multispectral pedestrian datasets demonstrate that the proposed method is superior to previous multi-modal detection algorithms quantitatively and qualitatively.
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<!-- > Note: This is an example of a Jekyll-based project website template: [Github link](https://github.com/shunzh/project_website).\
+> The following content is generated by ChatGPT. The figure is manually added. -->
+
+<h2 id="background">Background</h2>
+<!-- The paper "On Computable Numbers, with an Application to the Entscheidungsproblem" was published by Alan Turing in 1936. In this groundbreaking paper, Turing introduced the concept of a universal computing machine, now known as the Turing machine. -->
+<p>The paper “CrossFormer : Cross-guided attention for multi-modal object detection” was published by Seungik Lee in 2024. In this groundbreaking paper, Seungik introduced the concept of Cross-Guided Attention Module(CGAM) based RGB-IR domain.</p>
+
+<h2 id="objective">Objective</h2>
+<p>Seungik’s main objective in this paper was to propose a novel cross-guided attention
+mechanism for robust multi-modal object detection in changing environments. Our model is designed to help RGB and IR modalities interact effectively by generating the query and key, value from the base and guide domains, respectively. This cross-modal key-query interaction facilitates information exchange between different domains. Moreover, we have introduced a hierarchical structure that is effective in providing multi-scale object detection cues.</p>
+
+<h2 id="key-ideas">Key Ideas</h2>
+<ol>
+  <li>A novel cross-guided attention mechanism is proposed to enhance multi-modal features using attention maps generated by complementary interactions between modalities.</li>
+  <li>Multi-scale attention maps are generated to detect objects of various sizes by the proposed hierarchical transformer.</li>
+  <li>The proposed model has achieved state-of-the-art performance in FLIR-aligned, LLVIP, and KAIST multispectral pedestrian datasets.</li>
+</ol>
+
+<p><img src="/static/image/figure1.png" alt="Turing Machine" /></p>
+
+<p>*Figure 1: Overall architecture of the proposed model.</p>
+
+<p><img src="/static/image/figure2.png" alt="Turing Machine" /></p>
+
+<p>*Figure 2:  Cross-guided attention mechanism of the proposed CGAM.</p>
+
+<h2 id="table-object-detection-performance-and-computational-complexity-comparison-on-fliraligned-and-llvip-datasets">Table: Object detection performance and computational complexity comparison on FLIRaligned and LLVIP datasets.</h2>
+
+<!-- | Computable Numbers | Non-Computable Numbers |
+|-------------------|-----------------------|
+| Rational numbers, e.g., 1/2, 3/4 | Transcendental numbers, e.g., π, e |
+| Algebraic numbers, e.g., √2, ∛3 | Non-algebraic numbers, e.g., √2 + √3 |
+| Numbers with finite decimal representations | Numbers with infinite, non-repeating decimal representations | -->
+
+<table>
+  <tbody>
+    <tr>
+      <td>Dataset</td>
+      <td>Modality</td>
+      <td>Mehod</td>
+      <td>mAP50</td>
+      <td>mAP75</td>
+      <td>mAP</td>
+      <td>GFLOPs</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>RGB</td>
+      <td>YOLOv5</td>
+      <td>67.8</td>
+      <td>25.9</td>
+      <td>31.8</td>
+      <td>115.58</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>IR</td>
+      <td>YOLOv5</td>
+      <td>73.9</td>
+      <td>35.7</td>
+      <td>39.5</td>
+      <td>115.58</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>RGB+IR</td>
+      <td>Two-stream YOLOv5</td>
+      <td>73.0</td>
+      <td>32.0</td>
+      <td>39.5</td>
+      <td>190.14</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>RGB+IR</td>
+      <td>CFR_3</td>
+      <td>72.4</td>
+      <td>32.9</td>
+      <td>37.5</td>
+      <td>190.14</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>RGB+IR</td>
+      <td>GAFF(ResNet18)</td>
+      <td>72.9</td>
+      <td>32.9</td>
+      <td>37.5</td>
+      <td>-</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>RGB+IR</td>
+      <td>GAFF(VGG16)</td>
+      <td>72.7</td>
+      <td>30.9</td>
+      <td>37.3</td>
+      <td>-</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>RGB+IR</td>
+      <td>CFT</td>
+      <td>78.7</td>
+      <td>35.5</td>
+      <td>40.2</td>
+      <td>200.40</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FLIR-aligned</td>
+      <td>RGB+IR</td>
+      <td>CrossFormer</td>
+      <td>79.3</td>
+      <td>38.5</td>
+      <td>42.1</td>
+      <td>361.66</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>LLVIP</td>
+      <td>RGB</td>
+      <td>YOLOv5</td>
+      <td>90.8</td>
+      <td>51.9</td>
+      <td>50.0</td>
+      <td>115.58</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>LLVIP</td>
+      <td>IR</td>
+      <td>YOLOv5</td>
+      <td>94.6</td>
+      <td>72.2</td>
+      <td>61.9</td>
+      <td>115.58</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>LLVIP</td>
+      <td>RGB+IR</td>
+      <td>Two-stream YOLOv5</td>
+      <td>95.8</td>
+      <td>71.4</td>
+      <td>62.3</td>
+      <td>37.3</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>LLVIP</td>
+      <td>RGB+IR</td>
+      <td>CFT</td>
+      <td>97.5</td>
+      <td>72.9</td>
+      <td>63.6</td>
+      <td>200.40</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>LLVIP</td>
+      <td>RGB+IR</td>
+      <td>CrossFormer</td>
+      <td>79.4</td>
+      <td>75.4</td>
+      <td>65.1</td>
+      <td>361.66</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- He used the concept of a universal Turing machine to prove that the set of computable functions is recursively enumerable, meaning it can be listed by an algorithm. -->
+
+<!-- ## Significance
+Turing's paper laid the foundation for the theory of computation and had a profound impact on the development of computer science. The Turing machine became a fundamental concept in theoretical computer science, serving as a theoretical model for studying the limits and capabilities of computation. Turing's work also influenced the development of programming languages, algorithms, and the design of modern computers. -->
+
+<h2 id="citation">Citation</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{lee2024crossformer,
+  title={CrossFormer: Cross-guided attention for multi-modal object detection},
+  author={Lee, Seungik and Park, Jaehyeong and Park, Jinsun},
+  journal={Pattern Recognition Letters},
+  year={2024},
+  publisher={Elsevier}
+}
+</code></pre></div></div>
+
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template borrowed from <a
+            href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
