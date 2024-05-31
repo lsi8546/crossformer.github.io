@@ -3,10 +3,10 @@ layout: project_page
 permalink: /
 
 # title: On Computable Numbers, with an Application to the Entscheidungsproblem
-title: Cross-guided attention for multi-modal object detection
+title: Cross-Guided Attention for Multi-Modal Object Detection
 authors:
     # A. M. Turing
-    Seungik Lee, Jaehyeong Park, Jinsun Park
+    Seungik Lee, Jaehyeong Park, and Jinsun Park
 affiliations:
     # King's College, Cambridge
     Pusan National University, South Korea
