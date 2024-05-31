@@ -15,9 +15,9 @@ affiliations:
 # code: https://github.com/topics/turing-machines
 # data: https://huggingface.co/docs/datasets
 paper: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
-video: 
-code: 
-data: 
+video: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
+code: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
+data: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
 ---
 
 <!-- Using HTML to center the abstract -->
