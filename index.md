@@ -2,7 +2,6 @@
 layout: project_page
 permalink: /
 
-# title: On Computable Numbers, with an Application to the Entscheidungsproblem
 title: Cross-Guided Attention for Multi-Modal Object Detection
 authors:
     # A. M. Turing
@@ -10,10 +9,6 @@ authors:
 affiliations:
     # King's College, Cambridge
     Pusan National University, South Korea
-# paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
-# video: https://www.youtube.com/results?search_query=turing+machine
-# code: https://github.com/topics/turing-machines
-# data: https://huggingface.co/docs/datasets
 paper: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
 video: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
 code: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
