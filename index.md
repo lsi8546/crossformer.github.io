@@ -56,27 +56,22 @@ mechanism for robust multi-modal object detection in changing environments. Our 
 2. Multi-scale attention maps are generated to detect objects of various sizes by the proposed hierarchical transformer.
 3. The proposed model has achieved state-of-the-art performance in FLIR-aligned, LLVIP, and KAIST multispectral pedestrian datasets.
 
-![Turing Machine](static/image/figure1.png)
+## Figure1: Overall architecture of the proposed model.
 
-*Figure 1: Overall architecture of the proposed model.
+![Turing Machine](/static/image/figure1.png)
 
-![Turing Machine](static/image/figure2.png)
+## Figure2: Cross-guided attention mechanism of the proposed CGAM.
 
-*Figure 2:  Cross-guided attention mechanism of the proposed CGAM.
+![Turing Machine](/static/image/figure2.png)
 
-## Table: Object detection performance and computational complexity comparison on FLIRaligned and LLVIP datasets.
 
-<!-- | Computable Numbers | Non-Computable Numbers |
-|-------------------|-----------------------|
-| Rational numbers, e.g., 1/2, 3/4 | Transcendental numbers, e.g., π, e |
-| Algebraic numbers, e.g., √2, ∛3 | Non-algebraic numbers, e.g., √2 + √3 |
-| Numbers with finite decimal representations | Numbers with infinite, non-repeating decimal representations | -->
+## Table1: Object detection performance and computational complexity comparison on FLIRaligned and LLVIP datasets.
 
 |   Dataset   | Modality |       Mehod        | mAP50 | mAP75 | mAP  | GFLOPs |
 |FLIR-aligned |    RGB   |       YOLOv5       | 67.8  | 25.9  | 31.8 | 115.58 |
 |FLIR-aligned |    IR    |       YOLOv5       | 73.9  | 35.7  | 39.5 | 115.58 |
 |FLIR-aligned |  RGB+IR  | Two-stream YOLOv5  | 73.0  | 32.0  | 39.5 | 190.14 |
-|FLIR-aligned |  RGB+IR  | CFR_3              | 72.4  | 32.9  | 37.5 | 190.14 |    |
+|FLIR-aligned |  RGB+IR  | CFR_3              | 72.4  | 32.9  | 37.5 | 190.14 |    
 |FLIR-aligned |  RGB+IR  | GAFF(ResNet18)     | 72.9  | 32.9  | 37.5 |  -     |
 |FLIR-aligned |  RGB+IR  | GAFF(VGG16)        | 72.7  | 30.9  | 37.3 |  -     |
 |FLIR-aligned |  RGB+IR  | CFT                | 78.7  | 35.5  | 40.2 | 200.40 |
@@ -87,11 +82,16 @@ mechanism for robust multi-modal object detection in changing environments. Our 
 |    LLVIP    |  RGB+IR  | CFT                | 97.5  | 72.9  | 63.6 | 200.40 |
 |    LLVIP    |  RGB+IR  | CrossFormer        | 79.4  | 75.4  | 65.1 | 361.66 |
 
+## Table2: Object detection performance comparison on KAIST multispectral pedestrian dataset.
 
-<!-- He used the concept of a universal Turing machine to prove that the set of computable functions is recursively enumerable, meaning it can be listed by an algorithm. -->
-
-<!-- ## Significance
-Turing's paper laid the foundation for the theory of computation and had a profound impact on the development of computer science. The Turing machine became a fundamental concept in theoretical computer science, serving as a theoretical model for studying the limits and capabilities of computation. Turing's work also influenced the development of programming languages, algorithms, and the design of modern computers. -->
+|   Method    |  Recall  |         LAMR           |
+|             |          |  All  |  Day  |  Night |
+|    MLPD     |   96.70  | 7.58  | 7.96  |  6.96  |
+|   ARCNN     |   97.25  | 9.34  | 9.94  |  7.86  |
+|   MBNet     |   98.90  | 7.66  | 9.07  |  4.89  |
+|   GAFF      |   98.35  | 6.38  | 8.25  |  4.83  |
+| CrossFormer |   99.45  | 5.96  | 6.18  |  4.83  |
+|   ProbEn++  |   98.90  | 5.14  | 6.04  |  3.59  |
 
 ## Citation
 ```
