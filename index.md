@@ -95,15 +95,15 @@ mechanism for robust multi-modal object detection in changing environments. Our 
 
 ## Visualize1 Object detection results on the FLIR-aligned dataset.
 
-![Turing Machine](/static/image/vis1.png)
+![Turing Machine](static/image/vis1.png)
 
 ## Visualize2 Object detection results on the LLVIP dataset.
 
-![Turing Machine](/static/image/vis2.png)
+![Turing Machine](static/image/vis2.png)
 
 ## Visualize3 Object detection results on the KAIST multispectral pedestrian dataset.
 
-![Turing Machine](/static/image/vis3.png)
+![Turing Machine](static/image/vis3.png)
 
 ## Citation
 ```
