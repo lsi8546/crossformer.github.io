@@ -56,11 +56,11 @@ mechanism for robust multi-modal object detection in changing environments. Our 
 2. Multi-scale attention maps are generated to detect objects of various sizes by the proposed hierarchical transformer.
 3. The proposed model has achieved state-of-the-art performance in FLIR-aligned, LLVIP, and KAIST multispectral pedestrian datasets.
 
-![Turing Machine](./static/image/figure1.png)
+![Turing Machine](static/image/figure1.png)
 
 *Figure 1: Overall architecture of the proposed model.
 
-![Turing Machine](./static/image/figure2.png)
+![Turing Machine](static/image/figure2.png)
 
 *Figure 2:  Cross-guided attention mechanism of the proposed CGAM.
 
