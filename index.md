@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: Cross-Guided Attention for Multi-Modal Object Detection
+title: CrossFormer:Cross-Guided Attention for Multi-Modal Object Detection
 authors:
     # A. M. Turing
     Seungik Lee, Jaehyeong Park, and Jinsun Park
