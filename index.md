@@ -10,7 +10,7 @@ affiliations:
     # King's College, Cambridge
     Pusan National University, South Korea
 paper: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
-axiv: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
+arxiv: https://www.sciencedirect.com/science/article/abs/pii/S016786552400045X
 code: https://github.com/lsi8546/Crossformer
 ---
 
